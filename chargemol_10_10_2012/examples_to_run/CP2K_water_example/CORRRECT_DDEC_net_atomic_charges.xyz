@@ -1,0 +1,31 @@
+  3
+jmolscript: load "" {1 1 1} spacegroup "x,y,z" unitcell [{ 15.000016 0.000000 0.000000 }, { 0.000000 15.000016 0.000000 }, { 0.000000 0.000000 15.000016 }]
+O   -0.000000   1.031228   1.125381   -0.782496
+H   -0.000000   1.785070   0.512177   0.391245
+H   0.000000   0.253722   0.542498   0.391252
+   
+See ddec.sourceforge.net for latest version.
+   
+Computational parameters:
+reference_weighting = 0.21
+Number of radial integration shells = 100
+Cutoff radius (pm) = 500
+Error in the integrated total number of electrons before renormalization (e) = 1.259999e-04
+charge convergence tolerance = 0.000010
+minimum radius for electron cloud penetration fitting (pm) = 200.000000
+Decay exponent for electron density of buried atom tails = 1.750000
+Number of iterations to convergence = 37
+   
+The following XYZ coordinates are in angstroms. The atomic dipoles and quadrupoles are in atomic units.
+atomic symbol, x, y, z, net_charge, dipole_x, dipole_y, dipole_z, dipole_mag, Qxy, Qxz, Qyz, Q(x^2-y^2), Q(3z^2 - R^2)
+O   -0.000000   1.031228   1.125381   -0.782496   0.000000   0.002952   0.159342   0.159370   0.000000   -0.000000   -0.004551   -0.499843   0.017277
+H   -0.000000   1.785070   0.512177   0.391245   0.000000   0.040060   -0.002216   0.040122   0.000000   -0.000000   -0.007189   -0.060251   0.022537
+H   0.000000   0.253722   0.542498   0.391252   -0.000000   -0.039993   -0.000474   0.039996   0.000000   0.000000   0.006567   -0.061100   0.021147
+   
+The sperically averaged electron density of each atom fit to a function of the form exp(a - br) for r >= rmin_cloud_penetration
+atomic symbol, x, y, z, a, b, Rsquared where a and b are in atomic units and Rsquared is the squared correlation coefficient
+O   -0.000000   1.031228   1.125381   -2.370368   1.617373   0.977965
+H   -0.000000   1.785070   0.512177   -3.651882   1.710902   0.998018
+H   0.000000   0.253722   0.542498   -3.613159   1.721891   0.998295
+   
+10-Oct-2012 12:54:00

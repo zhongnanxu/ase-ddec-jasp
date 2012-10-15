@@ -1,0 +1,19 @@
+  3
+nonperiodic system
+O   0.000000   0.000000   0.319088   0.201616
+O   -0.000000   1.135186   -0.159544   0.399192
+O   -0.000000   -1.135186   -0.159544   0.399192
+   
+Collinear spin population analysis was performed 
+The total spin magnetic moment of the unit cell is   1.000000
+   
+See ddec.sourceforge.net for latest version.
+   
+Computational parameters:
+spin_ref_fraction = 0.50
+Number of radial integration shells = 100
+Cutoff radius (pm) = 500
+spin convergence tolerance = 0.000050
+Number of iterations to convergence = 7
+   
+06-Oct-2012 02:39:35

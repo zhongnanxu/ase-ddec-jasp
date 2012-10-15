@@ -1,0 +1,13 @@
+#%Module
+##
+## dot modulefile
+##
+##
+
+module-whatis	"Allows you to use the monkey patch of ase.atoms.get_charges with DDEC" 
+
+# for Tcl script use only
+set     version      3.2.6
+
+prepend-path PYTHONPATH /home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-vasp
+setenv       DDEC_PATH /home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-vasp

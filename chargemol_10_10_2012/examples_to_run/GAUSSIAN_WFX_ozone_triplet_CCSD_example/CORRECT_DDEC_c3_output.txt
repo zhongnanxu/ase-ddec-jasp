@@ -1,0 +1,3159 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2010 The MathWorks, Inc.
+                Version 7.10.0.499 (R2010a) 64-bit (glnxa64)
+                              February 5, 2010
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+>> 
+periodicA =
+
+     0
+
+
+periodicB =
+
+     0
+
+
+periodicC =
+
+     0
+
+
+netcharge =
+
+     0
+
+
+input_type =
+
+     5
+
+
+vaspversion =
+
+     5
+
+
+atomic_densities_directory =
+
+~/bin/atomic_densities/
+
+
+sourcecode_directory =
+
+~/bin/sourcecode_08_19_2012/
+
+
+nshells =
+
+   100
+
+
+cutoff_radius =
+
+   500
+
+
+zero_tolerance =
+
+   1.0000e-08
+
+
+integration_tolerance =
+
+    0.1000
+
+
+integration_tolerance_percent =
+
+    0.0300
+
+
+minpixelvolume =
+
+    0.0081
+
+
+pixel_integration_tolerance =
+
+    0.0300
+
+
+charge_convergence_tolerance =
+
+   1.0000e-05
+
+
+spin_convergence_tolerance =
+
+   5.0000e-05
+
+
+distance_tolerance =
+
+   1.0000e-06
+
+
+reference_weighting =
+
+    0.2143
+
+
+rmin_cloud_penetration =
+
+   200
+
+
+density_decaying_exponent =
+
+    1.7500
+
+
+density_set_prefix =
+
+c2
+
+
+spin_ref_fraction =
+
+    0.5000
+
+
+wA_renormalization_max =
+
+    10
+
+
+SAXIS =
+
+    0.0000         0    1.0000
+
+
+preferred_grid_spacing =
+
+    0.1400
+
+
+gaussian_overlap_tolerance =
+
+   1.0000e-12
+
+
+analytic_alpha_cutoff =
+
+     5
+
+
+periodic_cutoff_length =
+
+    28
+
+
+xsf_inputfile =
+
+valence_density.xsf
+
+
+wfx_inputfile =
+
+ozone_triplet_CCSD.wfx
+
+
+ans =
+
+Entering
+
+08-Oct-2012 14:01:20
+
+ans =
+
+GTO basis set type is supported. Calculation will proceed.
+
+
+ncenters =
+
+     3
+
+
+norbitals =
+
+   276
+
+
+netcharge =
+
+     0
+
+
+nprimitives =
+
+   216
+
+
+ans =
+
+Natural orbital occupation numbers for alpha (1st column) and beta (2nd column) electrons.
+
+
+alpha_beta_occupation =
+
+    0.9998         0
+    0.9998         0
+    0.9998         0
+    0.9931         0
+    0.9911         0
+    0.9890         0
+    0.9876         0
+    0.9844         0
+    0.9838         0
+    0.9828         0
+    0.9818         0
+    0.9696         0
+    0.9680         0
+    0.0304         0
+    0.0296         0
+    0.0102         0
+    0.0101         0
+    0.0077         0
+    0.0068         0
+    0.0064         0
+    0.0059         0
+    0.0044         0
+    0.0039         0
+    0.0036         0
+    0.0036         0
+    0.0036         0
+    0.0035         0
+    0.0032         0
+    0.0030         0
+    0.0030         0
+    0.0030         0
+    0.0029         0
+    0.0022         0
+    0.0018         0
+    0.0016         0
+    0.0015         0
+    0.0015         0
+    0.0013         0
+    0.0012         0
+    0.0011         0
+    0.0006         0
+    0.0005         0
+    0.0005         0
+    0.0005         0
+    0.0004         0
+    0.0004         0
+    0.0004         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0003         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0002         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0001         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+    0.0000         0
+         0    0.9998
+         0    0.9998
+         0    0.9998
+         0    0.9910
+         0    0.9871
+         0    0.9851
+         0    0.9722
+         0    0.9710
+         0    0.9704
+         0    0.9542
+         0    0.9448
+         0    0.0537
+         0    0.0484
+         0    0.0244
+         0    0.0235
+         0    0.0063
+         0    0.0053
+         0    0.0052
+         0    0.0051
+         0    0.0043
+         0    0.0037
+         0    0.0036
+         0    0.0034
+         0    0.0031
+         0    0.0029
+         0    0.0028
+         0    0.0023
+         0    0.0021
+         0    0.0021
+         0    0.0017
+         0    0.0017
+         0    0.0016
+         0    0.0015
+         0    0.0015
+         0    0.0012
+         0    0.0011
+         0    0.0011
+         0    0.0009
+         0    0.0008
+         0    0.0007
+         0    0.0004
+         0    0.0003
+         0    0.0003
+         0    0.0003
+         0    0.0003
+         0    0.0003
+         0    0.0003
+         0    0.0003
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0002
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0001
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+         0    0.0000
+
+
+ans =
+
+The total number of electrons in natural orbitals is
+
+
+included_electrons =
+
+   24.0000
+
+
+natoms =
+
+     3
+
+
+ans =
+
+The number of valence electrons is consistent with the sum of orbital occupations.
+
+
+ans =
+
+Initial setup of atoms using temporary origin (0,0,0)
+
+
+center_nabc =
+
+     0     0     8
+     0    13    -4
+     0   -13    -4
+
+
+delta_na =
+
+    69
+
+
+delta_nb =
+
+    69
+
+
+delta_nc =
+
+    69
+
+
+ans =
+
+Compute a better origin and number of grid points along each grid direction
+
+
+totnumA =
+
+   138
+
+
+totnumB =
+
+   164
+
+
+totnumC =
+
+   150
+
+
+ans =
+
+The new origin is
+
+
+origin =
+
+   -9.6600  -11.4800  -10.2200
+
+
+ans =
+
+Compute atomic positions using the better origin
+
+
+center_nabc =
+
+    69    82    81
+    69    95    69
+    69    69    69
+
+
+nimages =
+
+     1
+
+
+ans =
+
+Setup of grid points was successful.
+
+
+ans =
+
+The number of primitive products to treat analytically is
+
+
+num_analytic_primitive_pairs =
+
+        4938
+
+
+ans =
+
+The number of primitive products to treat numerically is
+
+
+num_numeric_primitive_pairs =
+
+        7005
+
+
+ans =
+
+The total number of included primitives is
+
+
+num_included_primitive_pairs =
+
+       11943
+
+
+ans =
+
+The one-particle density matrix is properly normalized.
+
+
+ans =
+
+The transformation of gaussian primitives was succesful.
+
+
+count =
+
+   100
+
+
+count =
+
+   200
+
+
+count =
+
+   300
+
+
+count =
+
+   400
+
+
+count =
+
+   500
+
+
+count =
+
+   600
+
+
+count =
+
+   700
+
+
+count =
+
+   800
+
+
+count =
+
+   900
+
+
+count =
+
+        1000
+
+
+count =
+
+        1100
+
+
+count =
+
+        1200
+
+
+count =
+
+        1300
+
+
+count =
+
+        1400
+
+
+count =
+
+        1500
+
+
+count =
+
+        1600
+
+
+count =
+
+        1700
+
+
+count =
+
+        1800
+
+
+count =
+
+        1900
+
+
+count =
+
+        2000
+
+
+count =
+
+        2100
+
+
+count =
+
+        2200
+
+
+count =
+
+        2300
+
+
+count =
+
+        2400
+
+
+count =
+
+        2500
+
+
+count =
+
+        2600
+
+
+count =
+
+        2700
+
+
+count =
+
+        2800
+
+
+count =
+
+        2900
+
+
+count =
+
+        3000
+
+
+count =
+
+        3100
+
+
+count =
+
+        3200
+
+
+count =
+
+        3300
+
+
+count =
+
+        3400
+
+
+count =
+
+        3500
+
+
+count =
+
+        3600
+
+
+count =
+
+        3700
+
+
+count =
+
+        3800
+
+
+count =
+
+        3900
+
+
+count =
+
+        4000
+
+
+count =
+
+        4100
+
+
+count =
+
+        4200
+
+
+count =
+
+        4300
+
+
+count =
+
+        4400
+
+
+count =
+
+        4500
+
+
+count =
+
+        4600
+
+
+count =
+
+        4700
+
+
+count =
+
+        4800
+
+
+count =
+
+        4900
+
+
+count =
+
+        5000
+
+
+count =
+
+        5100
+
+
+count =
+
+        5200
+
+
+count =
+
+        5300
+
+
+count =
+
+        5400
+
+
+count =
+
+        5500
+
+
+count =
+
+        5600
+
+
+count =
+
+        5700
+
+
+count =
+
+        5800
+
+
+count =
+
+        5900
+
+
+count =
+
+        6000
+
+
+count =
+
+        6100
+
+
+count =
+
+        6200
+
+
+count =
+
+        6300
+
+
+count =
+
+        6400
+
+
+count =
+
+        6500
+
+
+count =
+
+        6600
+
+
+count =
+
+        6700
+
+
+count =
+
+        6800
+
+
+count =
+
+        6900
+
+
+count =
+
+        7000
+
+
+count =
+
+        7100
+
+
+count =
+
+        7200
+
+
+count =
+
+        7300
+
+
+count =
+
+        7400
+
+
+count =
+
+        7500
+
+
+count =
+
+        7600
+
+
+count =
+
+        7700
+
+
+count =
+
+        7800
+
+
+count =
+
+        7900
+
+
+count =
+
+        8000
+
+
+count =
+
+        8100
+
+
+count =
+
+        8200
+
+
+count =
+
+        8300
+
+
+count =
+
+        8400
+
+
+count =
+
+        8500
+
+
+count =
+
+        8600
+
+
+count =
+
+        8700
+
+
+count =
+
+        8800
+
+
+count =
+
+        8900
+
+
+count =
+
+        9000
+
+
+count =
+
+        9100
+
+
+count =
+
+        9200
+
+
+count =
+
+        9300
+
+
+count =
+
+        9400
+
+
+count =
+
+        9500
+
+
+count =
+
+        9600
+
+
+count =
+
+        9700
+
+
+count =
+
+        9800
+
+
+count =
+
+        9900
+
+
+count =
+
+       10000
+
+
+count =
+
+       10100
+
+
+count =
+
+       10200
+
+
+count =
+
+       10300
+
+
+count =
+
+       10400
+
+
+count =
+
+       10500
+
+
+count =
+
+       10600
+
+
+count =
+
+       10700
+
+
+count =
+
+       10800
+
+
+count =
+
+       10900
+
+
+count =
+
+       11000
+
+
+count =
+
+       11100
+
+
+count =
+
+       11200
+
+
+count =
+
+       11300
+
+
+count =
+
+       11400
+
+
+count =
+
+       11500
+
+
+count =
+
+       11600
+
+
+count =
+
+       11700
+
+
+count =
+
+       11800
+
+
+count =
+
+       11900
+
+
+count =
+
+   100
+
+
+count =
+
+   200
+
+
+count =
+
+   300
+
+
+count =
+
+   400
+
+
+count =
+
+   500
+
+
+count =
+
+   600
+
+
+count =
+
+   700
+
+
+count =
+
+   800
+
+
+count =
+
+   900
+
+
+count =
+
+        1000
+
+
+count =
+
+        1100
+
+
+count =
+
+        1200
+
+
+count =
+
+        1300
+
+
+count =
+
+        1400
+
+
+count =
+
+        1500
+
+
+count =
+
+        1600
+
+
+count =
+
+        1700
+
+
+count =
+
+        1800
+
+
+count =
+
+        1900
+
+
+count =
+
+        2000
+
+
+count =
+
+        2100
+
+
+count =
+
+        2200
+
+
+count =
+
+        2300
+
+
+count =
+
+        2400
+
+
+count =
+
+        2500
+
+
+count =
+
+        2600
+
+
+count =
+
+        2700
+
+
+count =
+
+        2800
+
+
+count =
+
+        2900
+
+
+count =
+
+        3000
+
+
+count =
+
+        3100
+
+
+count =
+
+        3200
+
+
+count =
+
+        3300
+
+
+count =
+
+        3400
+
+
+count =
+
+        3500
+
+
+count =
+
+        3600
+
+
+count =
+
+        3700
+
+
+count =
+
+        3800
+
+
+count =
+
+        3900
+
+
+count =
+
+        4000
+
+
+count =
+
+        4100
+
+
+count =
+
+        4200
+
+
+count =
+
+        4300
+
+
+count =
+
+        4400
+
+
+count =
+
+        4500
+
+
+count =
+
+        4600
+
+
+count =
+
+        4700
+
+
+count =
+
+        4800
+
+
+count =
+
+        4900
+
+
+count =
+
+        5000
+
+
+count =
+
+        5100
+
+
+count =
+
+        5200
+
+
+count =
+
+        5300
+
+
+count =
+
+        5400
+
+
+count =
+
+        5500
+
+
+count =
+
+        5600
+
+
+count =
+
+        5700
+
+
+count =
+
+        5800
+
+
+count =
+
+        5900
+
+
+count =
+
+        6000
+
+
+count =
+
+        6100
+
+
+count =
+
+        6200
+
+
+count =
+
+        6300
+
+
+count =
+
+        6400
+
+
+count =
+
+        6500
+
+
+count =
+
+        6600
+
+
+count =
+
+        6700
+
+
+count =
+
+        6800
+
+
+count =
+
+        6900
+
+
+count =
+
+        7000
+
+
+count =
+
+        7100
+
+
+count =
+
+        7200
+
+
+count =
+
+        7300
+
+
+count =
+
+        7400
+
+
+count =
+
+        7500
+
+
+count =
+
+        7600
+
+
+count =
+
+        7700
+
+
+count =
+
+        7800
+
+
+count =
+
+        7900
+
+
+count =
+
+        8000
+
+
+count =
+
+        8100
+
+
+count =
+
+        8200
+
+
+count =
+
+        8300
+
+
+count =
+
+        8400
+
+
+count =
+
+        8500
+
+
+count =
+
+        8600
+
+
+count =
+
+        8700
+
+
+count =
+
+        8800
+
+
+count =
+
+        8900
+
+
+count =
+
+        9000
+
+
+count =
+
+        9100
+
+
+count =
+
+        9200
+
+
+count =
+
+        9300
+
+
+count =
+
+        9400
+
+
+count =
+
+        9500
+
+
+count =
+
+        9600
+
+
+count =
+
+        9700
+
+
+count =
+
+        9800
+
+
+count =
+
+        9900
+
+
+count =
+
+       10000
+
+
+count =
+
+       10100
+
+
+count =
+
+       10200
+
+
+count =
+
+       10300
+
+
+count =
+
+       10400
+
+
+count =
+
+       10500
+
+
+count =
+
+       10600
+
+
+count =
+
+       10700
+
+
+count =
+
+       10800
+
+
+count =
+
+       10900
+
+
+count =
+
+       11000
+
+
+count =
+
+       11100
+
+
+count =
+
+       11200
+
+
+count =
+
+       11300
+
+
+count =
+
+       11400
+
+
+count =
+
+       11500
+
+
+count =
+
+       11600
+
+
+count =
+
+       11700
+
+
+count =
+
+       11800
+
+
+count =
+
+       11900
+
+
+ans =
+
+Generation of the valence and spin density for each grid point was successful.
+
+
+center_nabc =
+
+    69    82    81
+    69    95    69
+    69    69    69
+
+
+delta_na =
+
+    69
+
+
+delta_nb =
+
+    69
+
+
+delta_nc =
+
+    69
+
+
+ans =
+
+The grid spacing in your electron density input file is adequate.
+
+
+ans =
+
+Checking to see that all core electrons are accounted for:
+
+
+ans =
+
+Finished the check for missing core electrons.
+
+
+ncore =
+
+     0
+
+
+nvalence =
+
+    24
+
+
+checkme =
+
+   4.2202e-08
+
+
+ans =
+
+The grid spacing is adequate and all electrons are properly accounted for.
+
+
+ans =
+
+Calculation will proceed.
+
+
+ans =
+
+Iteratively solving for the core charge distributions:
+
+
+iter =
+
+     1
+
+
+change =
+
+    2.2354
+
+
+iter =
+
+     2
+
+
+change =
+
+   4.2185e-04
+
+
+iter =
+
+     3
+
+
+change =
+
+   4.0980e-07
+
+
+iter =
+
+     4
+
+
+change =
+
+   3.6369e-09
+
+
+iter =
+
+     5
+
+
+change =
+
+   1.1206e-09
+
+
+iter =
+
+     6
+
+
+change =
+
+   9.8559e-10
+
+
+ans =
+
+Iteratively solving for the atomic partial charge distributions:
+
+
+iter =
+
+     1
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.8772    8.0614    8.0614
+
+
+max_change =
+
+    8.0614
+
+
+max_density_change =
+
+  206.2098
+
+
+ans =
+
+Information for noniterative Hirshfeld method will be printed now.
+
+
+ans =
+
+Multipole analysis for each of the expansion sites.
+
+
+ans =
+
+XYZ coordinates, net charges, and multipoles are in atomic units. Dipoles and quadrupoles are for valence electrons.
+
+
+ans =
+
+center number, atomic number, x, y, z, net_charge, dipole_x, dipole_y, dipole_z, dipole_mag, Qxy, Qxz, Qyz, Q(x^2-y^2), Q(3z^2 - R^2)
+
+
+final_result =
+
+  Columns 1 through 7
+
+    1.0000    8.0000   -0.0000    0.0000    1.0943    0.1228    0.0000
+    2.0000    8.0000   -0.0000    1.8723   -0.5472   -0.0614    0.0000
+    3.0000    8.0000   -0.0000   -1.8723   -0.5472   -0.0614   -0.0000
+
+  Columns 8 through 14
+
+    0.0000   -0.0541    0.0541    0.0000    0.0000    0.0000   -0.0584
+   -0.0323    0.0877    0.0935    0.0000   -0.0000   -0.1287   -0.2863
+    0.0323    0.0877    0.0935    0.0000    0.0000    0.1287   -0.2863
+
+  Column 15
+
+   -0.1646
+    0.1101
+    0.1101
+
+
+ans =
+
+Hirshfeld analysis finished, calculation of iterative AIM will proceed.
+
+
+Hirshfeld_population =
+
+    7.8772    8.0614    8.0614
+
+
+iter =
+
+     2
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.8273    8.0864    8.0864
+
+
+max_change =
+
+    0.0500
+
+
+max_density_change =
+
+    0.0042
+
+
+iter =
+
+     3
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.8014    8.0993    8.0993
+
+
+max_change =
+
+    0.0259
+
+
+max_density_change =
+
+   3.4745e-04
+
+
+iter =
+
+     4
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7877    8.1061    8.1061
+
+
+max_change =
+
+    0.0136
+
+
+max_density_change =
+
+   1.5177e-04
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+     5
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7803    8.1099    8.1099
+
+
+max_change =
+
+    0.0074
+
+
+max_density_change =
+
+   7.4687e-05
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+     6
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7761    8.1119    8.1119
+
+
+max_change =
+
+    0.0042
+
+
+max_density_change =
+
+   3.8937e-05
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+     7
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7737    8.1131    8.1131
+
+
+max_change =
+
+    0.0024
+
+
+max_density_change =
+
+   2.1058e-05
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+     8
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7724    8.1138    8.1138
+
+
+max_change =
+
+    0.0014
+
+
+max_density_change =
+
+   1.1710e-05
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+     9
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7715    8.1142    8.1142
+
+
+max_change =
+
+   8.1577e-04
+
+
+max_density_change =
+
+   6.6526e-06
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    10
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7711    8.1145    8.1145
+
+
+max_change =
+
+   4.8640e-04
+
+
+max_density_change =
+
+   3.8439e-06
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    11
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7708    8.1146    8.1146
+
+
+max_change =
+
+   2.9271e-04
+
+
+max_density_change =
+
+   2.2517e-06
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    12
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7706    8.1147    8.1147
+
+
+max_change =
+
+   1.7764e-04
+
+
+max_density_change =
+
+   1.3337e-06
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    13
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7705    8.1148    8.1148
+
+
+max_change =
+
+   1.0859e-04
+
+
+max_density_change =
+
+   7.9739e-07
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    14
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7704    8.1148    8.1148
+
+
+max_change =
+
+   6.6814e-05
+
+
+max_density_change =
+
+   4.8065e-07
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    15
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7704    8.1148    8.1148
+
+
+max_change =
+
+   4.1353e-05
+
+
+max_density_change =
+
+   2.9181e-07
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    16
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7703    8.1148    8.1148
+
+
+max_change =
+
+   2.5733e-05
+
+
+max_density_change =
+
+   1.7831e-07
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    17
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7703    8.1148    8.1148
+
+
+max_change =
+
+   1.6093e-05
+
+
+max_density_change =
+
+   1.0959e-07
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    18
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7703    8.1148    8.1148
+
+
+max_change =
+
+   1.0111e-05
+
+
+max_density_change =
+
+   6.7725e-08
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    19
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7703    8.1148    8.1148
+
+
+max_change =
+
+   6.3805e-06
+
+
+max_density_change =
+
+   4.2062e-08
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    20
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7703    8.1148    8.1148
+
+
+max_change =
+
+   4.0427e-06
+
+
+max_density_change =
+
+   2.6247e-08
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    21
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7703    8.1148    8.1148
+
+
+max_change =
+
+   2.5713e-06
+
+
+max_density_change =
+
+   1.6451e-08
+
+
+ans =
+
+Iterations to converge reshaping: 
+
+
+ans =
+
+     3
+
+
+iter =
+
+    22
+
+
+normalization =
+
+    1.0000
+
+
+valence_population =
+
+    7.7703    8.1148    8.1148
+
+
+max_change =
+
+   1.6414e-06
+
+
+max_density_change =
+
+   1.0354e-08
+
+
+ans =
+
+Multipole analysis for each of the expansion sites.
+
+
+ans =
+
+XYZ coordinates, net charges, and multipoles are in atomic units. Dipoles and quadrupoles are for valence electrons.
+
+
+ans =
+
+center number, atomic number, x, y, z, net_charge, dipole_x, dipole_y, dipole_z, dipole_mag, Qxy, Qxz, Qyz, Q(x^2-y^2), Q(3z^2 - R^2)
+
+
+final_result =
+
+  Columns 1 through 7
+
+    1.0000    8.0000   -0.0000    0.0000    1.0943    0.2297   -0.0000
+    2.0000    8.0000   -0.0000    1.8723   -0.5472   -0.1148    0.0000
+    3.0000    8.0000   -0.0000   -1.8723   -0.5472   -0.1148    0.0000
+
+  Columns 8 through 14
+
+    0.0000   -0.1621    0.1621    0.0000    0.0000    0.0000   -0.1839
+   -0.0116    0.0540    0.0552    0.0000   -0.0000   -0.1266   -0.3331
+    0.0116    0.0540    0.0552   -0.0000    0.0000    0.1266   -0.3331
+
+  Column 15
+
+   -0.1792
+    0.0741
+    0.0741
+
+
+center_of_mass =
+
+   1.0e-12 *
+
+   -0.0001         0   -0.1333
+
+
+ans =
+
+Since the system is nonperiodic, total multipole moment analysis will be performed.
+
+
+ans =
+
+Total multipole moments are computed using the center of mass as the origin.
+
+
+ans =
+
+Dipole and quadrupole moments using the net atomic charges.
+
+
+ans =
+
+This corresponds to truncatating the distributed multipole expansion at monopole order.
+
+
+partial_charge_dipole_x =
+
+   2.6333e-17
+
+
+partial_charge_dipole_y =
+
+  -1.7032e-08
+
+
+partial_charge_dipole_z =
+
+    0.3770
+
+
+partial_charge_dipole_magnitude =
+
+    0.3770
+
+
+partial_charge_quadrupole_xy =
+
+  -4.9303e-17
+
+
+partial_charge_quadrupole_xz =
+
+   1.4409e-17
+
+
+partial_charge_quadrupole_yz =
+
+   9.3194e-09
+
+
+partial_charge_quadrupole_x2minusy2 =
+
+    0.8052
+
+
+partial_charge_quadrupole_3z2minusr2 =
+
+    1.2178
+
+
+ans =
+
+Dipole and quadrupole moments using the net atomic charges and the atomic dipoles.
+
+
+ans =
+
+This corresponds to truncatating the distributed multipole expansion at dipole order.
+
+
+dipole_x =
+
+   1.0149e-14
+
+
+dipole_y =
+
+  -2.5650e-08
+
+
+dipole_z =
+
+    0.3229
+
+
+dipole_magnitude =
+
+    0.3229
+
+
+quadrupole_xy =
+
+   1.5260e-14
+
+
+quadrupole_xz =
+
+  -2.4397e-14
+
+
+quadrupole_yz =
+
+   1.8242e-08
+
+
+quadrupole_x2minusy2 =
+
+    0.8917
+
+
+quadrupole_3z2minusr2 =
+
+    0.3587
+
+
+ans =
+
+Dipole and quadrupole moments using the net atomic charges, atomic dipoles, and atomic quadrupoles.
+
+
+ans =
+
+This corresponds to truncatating the distributed multipole expansion at quadrupole order.
+
+
+dipole_x =
+
+   1.0149e-14
+
+
+dipole_y =
+
+  -2.5650e-08
+
+
+dipole_z =
+
+    0.3229
+
+
+dipole_magnitude =
+
+    0.3229
+
+
+quadrupole_xy =
+
+   1.5125e-14
+
+
+quadrupole_xz =
+
+  -2.4005e-14
+
+
+quadrupole_yz =
+
+   1.9117e-08
+
+
+quadrupole_x2minusy2 =
+
+    0.0416
+
+
+quadrupole_3z2minusr2 =
+
+    0.3277
+
+
+ans =
+
+Calculation of the electron cloud penetration terms
+
+08-Oct-2012 15:21:25
+
+ans =
+
+Iteratively solving for the atomic spin distributions:
+
+
+iter =
+
+     1
+
+
+spin_population =
+
+    0.4430    0.7785    0.7785
+
+
+tot_spin_moment =
+
+    2.0000
+
+
+max_change =
+
+    0.7785
+
+
+iter =
+
+     2
+
+
+spin_population =
+
+    0.4289    0.7855    0.7855
+
+
+tot_spin_moment =
+
+    1.9998
+
+
+max_change =
+
+    0.0141
+
+
+iter =
+
+     3
+
+
+spin_population =
+
+    0.4260    0.7870    0.7870
+
+
+tot_spin_moment =
+
+    2.0001
+
+
+max_change =
+
+    0.0029
+
+
+iter =
+
+     4
+
+
+spin_population =
+
+    0.4253    0.7873    0.7873
+
+
+tot_spin_moment =
+
+    2.0000
+
+
+max_change =
+
+   7.1982e-04
+
+
+iter =
+
+     5
+
+
+spin_population =
+
+    0.4251    0.7875    0.7875
+
+
+tot_spin_moment =
+
+    2.0000
+
+
+max_change =
+
+   1.6790e-04
+
+
+iter =
+
+     6
+
+
+spin_population =
+
+    0.4250    0.7875    0.7875
+
+
+tot_spin_moment =
+
+    2.0000
+
+
+max_change =
+
+   5.3239e-05
+
+
+iter =
+
+     7
+
+
+spin_population =
+
+    0.4250    0.7875    0.7875
+
+
+tot_spin_moment =
+
+    2.0000
+
+
+max_change =
+
+   1.2579e-05
+
+
+ans =
+
+Final spin populations:
+
+
+spin_population =
+
+    0.4250    0.7875    0.7875
+
+
+ans =
+
+The total spin moment of the unit cell is   
+
+
+tot_spin_moment =
+
+    2.0000
+
+
+ans =
+
+Normal termination of Chargemol program.
+
+
+ans =
+
+Use and distribution of this program is subject to certain licensing restrictions.
+
+
+ans =
+
+Please see ddec.sourceforge.net for details.
+
+
+ans =
+
+Please cite the following journal reference when using this program to compute DDEC, Hirshfeld, or ISA charges:
+
+
+ans =
+
+Thomas A. Manz and David S. Sholl, "Chemically Meaningful Atomic Charges that Reproduce the Electrostatic Potential in Periodic and Nonperiodic Materials", J. Chem. Theory Comput., Vol. 6 (2010) 2455-2468.
+
+
+ans =
+
+Please cite the following journal reference when using this program to compute atomic spin moments:
+
+
+ans =
+
+Thomas A. Manz and David S. Sholl, "Methods for Computing Accurate Atomic Spin Moments for Collinear and Noncollinear Magnetism in Periodic and Nonperiodic Materials", J. Chem. Theory Comput., Vol. 7 (2011) 4146-4164.
+
+
+ans =
+
+Exiting Chargemol
+
+08-Oct-2012 15:26:39
+ 

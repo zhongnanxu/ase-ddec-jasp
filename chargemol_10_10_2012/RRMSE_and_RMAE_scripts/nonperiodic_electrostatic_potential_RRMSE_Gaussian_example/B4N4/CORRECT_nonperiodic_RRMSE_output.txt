@@ -1,0 +1,702 @@
+Warning: No display specified.  You will not be able to display graphics on the screen.
+Warning: No window system found.  Java option 'MWT' ignored
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+inner_multiplier =
+
+    1.4000
+
+
+outer_multiplier =
+
+     2
+
+
+partial_charge =
+
+   -0.8194
+   -0.8130
+   -0.8165
+   -0.8148
+    0.8162
+    0.8172
+    0.8155
+    0.8148
+
+
+atomic_number =
+
+     7
+     7
+     7
+     7
+     5
+     5
+     5
+     5
+
+
+natoms =
+
+     8
+
+
+sum_pred_pot_dipole =
+
+     0
+
+
+kcalmolhartree =
+
+  627.5095
+
+
+inputfile =
+
+potential.cube
+
+
+fid1 =
+
+     3
+
+
+parameters =
+
+    8.0000  -20.0000  -20.0000  -20.0000
+  102.0000    0.4000         0         0
+  102.0000         0    0.4000         0
+  102.0000         0         0    0.4000
+
+
+ka =
+
+     1
+
+
+ka =
+
+     2
+
+
+ka =
+
+     3
+
+
+ka =
+
+     4
+
+
+ka =
+
+     5
+
+
+ka =
+
+     6
+
+
+ka =
+
+     7
+
+
+ka =
+
+     8
+
+
+ka =
+
+     9
+
+
+ka =
+
+    10
+
+
+ka =
+
+    11
+
+
+ka =
+
+    12
+
+
+ka =
+
+    13
+
+
+ka =
+
+    14
+
+
+ka =
+
+    15
+
+
+ka =
+
+    16
+
+
+ka =
+
+    17
+
+
+ka =
+
+    18
+
+
+ka =
+
+    19
+
+
+ka =
+
+    20
+
+
+ka =
+
+    21
+
+
+ka =
+
+    22
+
+
+ka =
+
+    23
+
+
+ka =
+
+    24
+
+
+ka =
+
+    25
+
+
+ka =
+
+    26
+
+
+ka =
+
+    27
+
+
+ka =
+
+    28
+
+
+ka =
+
+    29
+
+
+ka =
+
+    30
+
+
+ka =
+
+    31
+
+
+ka =
+
+    32
+
+
+ka =
+
+    33
+
+
+ka =
+
+    34
+
+
+ka =
+
+    35
+
+
+ka =
+
+    36
+
+
+ka =
+
+    37
+
+
+ka =
+
+    38
+
+
+ka =
+
+    39
+
+
+ka =
+
+    40
+
+
+ka =
+
+    41
+
+
+ka =
+
+    42
+
+
+ka =
+
+    43
+
+
+ka =
+
+    44
+
+
+ka =
+
+    45
+
+
+ka =
+
+    46
+
+
+ka =
+
+    47
+
+
+ka =
+
+    48
+
+
+ka =
+
+    49
+
+
+ka =
+
+    50
+
+
+ka =
+
+    51
+
+
+ka =
+
+    52
+
+
+ka =
+
+    53
+
+
+ka =
+
+    54
+
+
+ka =
+
+    55
+
+
+ka =
+
+    56
+
+
+ka =
+
+    57
+
+
+ka =
+
+    58
+
+
+ka =
+
+    59
+
+
+ka =
+
+    60
+
+
+ka =
+
+    61
+
+
+ka =
+
+    62
+
+
+ka =
+
+    63
+
+
+ka =
+
+    64
+
+
+ka =
+
+    65
+
+
+ka =
+
+    66
+
+
+ka =
+
+    67
+
+
+ka =
+
+    68
+
+
+ka =
+
+    69
+
+
+ka =
+
+    70
+
+
+ka =
+
+    71
+
+
+ka =
+
+    72
+
+
+ka =
+
+    73
+
+
+ka =
+
+    74
+
+
+ka =
+
+    75
+
+
+ka =
+
+    76
+
+
+ka =
+
+    77
+
+
+ka =
+
+    78
+
+
+ka =
+
+    79
+
+
+ka =
+
+    80
+
+
+ka =
+
+    81
+
+
+ka =
+
+    82
+
+
+ka =
+
+    83
+
+
+ka =
+
+    84
+
+
+ka =
+
+    85
+
+
+ka =
+
+    86
+
+
+ka =
+
+    87
+
+
+ka =
+
+    88
+
+
+ka =
+
+    89
+
+
+ka =
+
+    90
+
+
+ka =
+
+    91
+
+
+ka =
+
+    92
+
+
+ka =
+
+    93
+
+
+ka =
+
+    94
+
+
+ka =
+
+    95
+
+
+ka =
+
+    96
+
+
+ka =
+
+    97
+
+
+ka =
+
+    98
+
+
+ka =
+
+    99
+
+
+ka =
+
+   100
+
+
+ka =
+
+   101
+
+
+ka =
+
+   102
+
+
+ans =
+
+The inner vdW radius multiplier was
+
+
+inner_multiplier =
+
+    1.4000
+
+
+ans =
+
+The outer vdW radius multiplier was
+
+
+outer_multiplier =
+
+     2
+
+
+ans =
+
+The total number of valid grid points was
+
+
+sum_points =
+
+       30395
+
+
+ans =
+
+The rms potential error without charges in kcal/mol is
+
+
+no_charges_rms_error =
+
+    3.4134
+
+
+ans =
+
+The rms potential error with partial charges in kcal/mol is
+
+
+RMSE_monopole =
+
+    0.2857
+
+
+ans =
+
+The RRMSE value at monopole order
+
+
+RRMSE_monopole =
+
+    0.0837
+
+
+ans =
+
+The rms potential error with partial charges and atomic dipoles in kcal/mol is
+
+
+RMSE_dipole =
+
+    0.3368
+
+
+ans =
+
+The RRMSE value at dipole order
+
+
+RRMSE_dipole =
+
+    0.0987
+
+
+ans =
+
+Normal termination of Chargemol program.
+
+
+ans =
+
+Use and distribution of this program is subject to certain licensing restrictions.
+
+
+ans =
+
+Please see ddec.sourceforge.net for details.
+
+
+ans =
+
+Please cite the following journal reference when using this code to compute RMSE and RRMSE values:
+
+
+ans =
+
+Taku Watanabe, Thomas A. Manz, and David S. Sholl, "Accurate Treatment of Electrostatics during Molecular Adsorption in Nanoporous Crystals Without Assigning Point Charges to Framework Atoms", J. Phys. Chem. C, Vol. 115, 2011, pp. 4824 - 4836.
+
+
+ans =
+
+Exiting Chargemol
+
+29-Oct-2011 20:07:40
+Chargemol version 1.6 Beta released on 10/29/2011
+>> 

@@ -1,0 +1,160 @@
+Warning: No display specified.  You will not be able to display graphics on the screen.
+Warning: No window system found.  Java option 'MWT' ignored
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2009 The MathWorks, Inc.
+                Version 7.9.0.529 (R2009b) 64-bit (glnxa64)
+                              August 12, 2009
+
+ 
+  To get started, type one of these: helpwin, helpdesk, or demo.
+  For product information, visit www.mathworks.com.
+ 
+
+zero_tolerance =
+
+    0.0100
+
+
+kcalmolhartree =
+
+  627.5095
+
+
+atomic_number =
+
+    52
+    53
+
+
+natoms =
+
+     2
+
+
+inputfile =
+
+spin_density.cube
+
+
+fid1 =
+
+     3
+
+
+parameters =
+
+    2.0000   -8.0000   -8.0000   -8.0000
+  162.0000    0.1000         0         0
+  162.0000         0    0.1000         0
+  222.0000         0         0    0.1000
+
+
+center_nabc =
+
+    80    80    79
+    80    80   132
+
+
+ans =
+
+The integration of the total magnetic moment was
+
+
+total_moment =
+
+    0.9998
+
+
+ans =
+
+The total number of valid grid points were
+
+
+count =
+
+   228
+
+
+ans =
+
+The mean absolute error without atomic spin moments was
+
+
+ans =
+
+   3.3193e-04
+
+
+ans =
+
+The mean absolute error with atomic spin moments was
+
+
+MAE =
+
+   1.3155e-05
+
+
+ans =
+
+The ratio of the two was
+
+
+ans =
+
+    0.0396
+
+
+ans =
+
+The integration of the total magnetic moment was
+
+
+total_moment =
+
+    0.9998
+
+
+ans =
+
+The average difference in test conditions was
+
+
+ans =
+
+   1.8563e-04
+
+
+ans =
+
+Normal termination of Chargemol program.
+
+
+ans =
+
+Use and distribution of this program is subject to certain licensing restrictions.
+
+
+ans =
+
+Please see ddec.sourceforge.net for details.
+
+
+ans =
+
+Please cite the following journal reference when using this code to compute RMSE and RRMSE values:
+
+
+ans =
+
+Thomas A. Manz and David S. Sholl, "Methods for Computing Accurate Atomic Spin Moments for Collinear and Noncollinear Magnetism in Periodic and Nonperiodic Materials", J. Chem. Theory Comput., 2011, http://pubs.acs.org/doi/abs/10.1021/ct200539n.
+
+
+ans =
+
+Exiting Chargemol
+
+29-Oct-2011 21:47:00
+Chargemol version 1.6 Beta released on 10/29/2011
+>> 

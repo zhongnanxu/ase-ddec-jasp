@@ -1,0 +1,31 @@
+  3
+nonperiodic system
+O   -0.000000   0.000000   0.435357   0.357693
+O   -0.000000   1.096192   -0.217678   -0.178847
+O   -0.000000   -1.096192   -0.217678   -0.178847
+   
+See ddec.sourceforge.net for latest version.
+   
+Computational parameters:
+reference_weighting = 0.21
+Number of radial integration shells = 100
+Cutoff radius (pm) = 500
+Error in the integrated total number of electrons before renormalization (e) = 6.421205e-09
+charge convergence tolerance = 0.000010
+minimum radius for electron cloud penetration fitting (pm) = 200.000000
+Decay exponent for electron density of buried atom tails = 1.750000
+Number of iterations to convergence = 24
+   
+The following XYZ coordinates are in angstroms. The atomic dipoles and quadrupoles are in atomic units.
+atomic symbol, x, y, z, net_charge, dipole_x, dipole_y, dipole_z, dipole_mag, Qxy, Qxz, Qyz, Q(x^2-y^2), Q(3z^2 - R^2)
+O   -0.000000   0.000000   0.435357   0.357693   0.000000   0.000000   -0.241211   0.241211   0.000000   -0.000000   0.000000   0.032656   -0.416398
+O   -0.000000   1.096192   -0.217678   -0.178847   -0.000000   -0.067773   0.026181   0.072654   -0.000000   -0.000000   -0.205291   0.016800   -0.740513
+O   -0.000000   -1.096192   -0.217678   -0.178847   0.000000   0.067773   0.026181   0.072654   0.000000   -0.000000   0.205291   0.016800   -0.740513
+   
+The sperically averaged electron density of each atom fit to a function of the form exp(a - br) for r >= rmin_cloud_penetration
+atomic symbol, x, y, z, a, b, Rsquared where a and b are in atomic units and Rsquared is the squared correlation coefficient
+O   -0.000000   0.000000   0.435357   1.697676   2.676530   0.996449
+O   -0.000000   1.096192   -0.217678   -0.319032   2.139523   0.998859
+O   -0.000000   -1.096192   -0.217678   -0.319032   2.139523   0.998859
+   
+06-Oct-2012 02:33:45
