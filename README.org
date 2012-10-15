@@ -1,0 +1,9 @@
+ase-ddec-vasp is an extension module for both ase.calculators.vasp and the ase.Atoms object. Originally, charges was just a list of arrays for the Atoms object that one manually assigned and coule manually read. The only two functionalities for charges was through the atoms.set_charges and atoms.get_charges, where atoms.get_charges just reads the charges you had to either initialize the Atoms object with or set with atoms.set_charges. As far as I can tell, there is no way to actually calculate theoretical net atomic charges (NAC) of systems.
+
+This module adds on functionality both ase.atoms and ase.calculators. They main idea is that atoms.get_charges() actually does calculations if it is attached to a vasp calculator that has been monkeypatched through jasp. Some things atoms.get_charges(). atoms.get_charges() should eventually do these things.
+
+1) Recognize if the atoms object is attached to a jasp calculator object.
+2) Be able to submit a matlab batch job to the queue to calculate charges.
+3) Recognize when a job needs to be submitted, similar to the functionality of jasp.
+4) Read the charges from the ddec output file.
+5) When calling atoms.get_charges() again and it already contains charges, be able to see if the current charges matches the atoms.charges
