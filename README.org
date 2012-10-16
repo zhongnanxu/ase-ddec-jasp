@@ -1,15 +1,14 @@
-=ase-ddec-vasp= is an extension module for both ase.calculators.vasp and the ase.Atoms object. 
-Originally, charges was just a list of arrays for the Atoms object that one manually assigned and coule manually read. The only two functionalities for charges was through the atoms.set_charges and atoms.get_charges, where atoms.get_charges just reads the charges you had to either initialize the Atoms object with or set with atoms.set_charges. As far as I can tell, there is no way to actually calculate theoretical net atomic charges (NAC) of systems.
+=ase-ddec-vasp= is an extension module for ase.calculators.vasp
 
-This module adds on functionality both ase.atoms and ase.calculators. They main idea is that atoms.get_charges() actually does calculations if it is attached to a vasp calculator that has been monkeypatched through jasp. Some things atoms.get_charges(). atoms.get_charges() should eventually do these things.
+This module adds on functionality ase.calculators.Vasp to allow one to run the DDEC program through Vasp.get_charges() function.
 
-1) Recognize if the atoms object is attached to a jasp calculator object.
-2) Be able to submit a matlab batch job to the queue to calculate charges.
-3) Recognize when a job needs to be submitted, similar to the functionality of jasp.
-4) Read the charges from the ddec output file.
-5) When calling atoms.get_charges() again and it already contains charges, be able to see if the current charges matches the atoms.charges
 
-To use this module, do either one of two things. Alter the ase-ddec-jasp file to include this directory in both the PYTHON_PATH and DDEC_PATH variables. Or, addd these two lines to your .bashrc file.
+1) Be able to submit a MATLAB batch job to the queue to calculate charges.
+2) Recognize when a job needs to be submitted -- similar to the functionality of jasp.
+3) Read the charges from the ddec output file.
+4) When calling atoms.get_charges() again and it already contains charges, be able to see if the current charges matches the atoms.charges
+
+To use this module, do either one of two things. Alter the ase-ddec-jasp file to include the directory where the chargemol_10_10-2012 in both the PYTHON_PATH and DDEC_PATH variables. Or, addd these two lines to your .bashrc file.
 
 export PYTHONPATH=/path/to/this/folder:$PYTHONPATH
-export DDEC_PATH=~/path/to/this/folder
+export DDEC_PATH=/path/folder/that/has/chargemol_10_10_2012

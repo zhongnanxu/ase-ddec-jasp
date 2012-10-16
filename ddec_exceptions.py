@@ -15,7 +15,7 @@ class DDECQueued(Exception):
         self.cwd = cwd
     
     def __str__(self):
-        return repr(self.cwd):
+        return repr(self.cwd)
 
 class DDECSubmitted(Exception):
     def __init__(self, ddec_jobid):

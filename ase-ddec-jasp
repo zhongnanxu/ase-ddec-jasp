@@ -10,4 +10,4 @@ module-whatis	"Allows you to use the monkey patch of ase.atoms.get_charges with 
 set     version      3.2.6
 
 prepend-path PYTHONPATH /path/to/this/directory/
-setenv       DDEC_PATH /path/to/this/directory/
+setenv       DDEC_PATH /path/that/has/chargemol_10_10_2012
