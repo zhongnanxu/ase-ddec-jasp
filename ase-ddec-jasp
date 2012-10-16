@@ -9,5 +9,5 @@ module-whatis	"Allows you to use the monkey patch of ase.atoms.get_charges with 
 # for Tcl script use only
 set     version      3.2.6
 
-prepend-path PYTHONPATH /home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-vasp
-setenv       DDEC_PATH /home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-vasp
+prepend-path PYTHONPATH /path/to/this/directory/
+setenv       DDEC_PATH /path/to/this/directory/

@@ -8,3 +8,8 @@ This module adds on functionality both ase.atoms and ase.calculators. They main 
 3) Recognize when a job needs to be submitted, similar to the functionality of jasp.
 4) Read the charges from the ddec output file.
 5) When calling atoms.get_charges() again and it already contains charges, be able to see if the current charges matches the atoms.charges
+
+To use this module, do either one of two things. Alter the ase-ddec-jasp file to include this directory in both the PYTHON_PATH and DDEC_PATH variables. Or, addd these two lines to your .bashrc file.
+
+export PYTHONPATH=/path/to/this/folder:$PYTHONPATH
+export DDEC_PATH=~/path/to/this/folder
