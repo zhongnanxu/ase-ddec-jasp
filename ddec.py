@@ -14,6 +14,7 @@ def check_installation():
     """Checks if the module and DDEC are installed correctly"""
     try:
         ddec_path = os.environ['DDEC_PATH']
+        ddec_script = os.environ['DDEC_SCRIPT']
     except KeyError:
         raise DDECInitialize('Make sure your DDEC_PATH is defined correctly')
     if (not isfile(ddec_path + '/chargemol_job.m') 
@@ -57,7 +58,7 @@ Vasp.get_charges = get_charges
 def ddec_run(calc):
     check_vasp_complete(calc)
     ddec_path = os.environ['DDEC_PATH']
-    shutil.copy(ddec_path + 'chargemol_job.m', CWD)
+    shutil.copy(ddec_script + 'chargemol_job.m', CWD)
     script = '''#!/bin/bash
 cd $PBS_O_WORKDIR
 matlab -nodesktop -r chargemol_job > chargemol_output.txt
