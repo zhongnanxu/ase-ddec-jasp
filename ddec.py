@@ -5,10 +5,7 @@ import sys
 import os
 import shutil
 from os.path import isfile, isdir
-from myvasp import check_calc_complete
 from subprocess import Popen, PIPE
-
-CWD = os.getcwd()
 
 def check_installation():
     """Checks if the module and DDEC are installed correctly"""
@@ -18,7 +15,7 @@ def check_installation():
     except KeyError:
         raise DDECInitialize('Make sure your DDEC_PATH is defined correctly')
     if (not isfile(ddec_path + '/chargemol_job.m') 
-        and not isdir(ddec_path + 'chargemol_10_10_2012')):
+        and not isdir(ddec_path + '/chargemol_10_10_2012')):
         raise DDECInitialize('Please make sure the DDEC program is installed')
     return True
 
@@ -31,8 +28,7 @@ def get_charges(self):
 
     # If the job has been started but not running, in the queue, or completed, we need to
     # clean up the files and restart the calculation
-    elif (not check_ddec_complete()
-          and not ddec_job_in_queue()):
+    elif (not check_ddec_complete() and not ddec_job_in_queue()):
         ddec_cleanup()
         ddec_run(self)
     
@@ -42,7 +38,7 @@ def get_charges(self):
             os.remove('ddec-running')
         except OSError:
             pass
-        return read_output(self.atoms)
+        return read_output(self)
     
     # If the job is running, we should pass
     elif (not check_ddec_complete() 
@@ -56,9 +52,11 @@ def get_charges(self):
 Vasp.get_charges = get_charges
 
 def ddec_run(calc):
+    # We want to copy the mfile to the location of the job
+    CWD = os.getcwd()
     check_vasp_complete(calc)
-    ddec_path = os.environ['DDEC_PATH']
-    shutil.copy(ddec_script + 'chargemol_job.m', CWD)
+    ddec_script = os.environ['DDEC_SCRIPT']
+    shutil.copy(ddec_script + '/chargemol_job.m', CWD)
     script = '''#!/bin/bash
 cd $PBS_O_WORKDIR
 matlab -nodesktop -r chargemol_job > chargemol_output.txt
@@ -75,7 +73,7 @@ matlab -nodesktop -r chargemol_job > chargemol_output.txt
     raise DDECSubmitted(out)
     return
     
-def read_output(atoms):
+def read_output(calc):
     '''The output we are interested in is reading the xyz file with all of the charges'''
     f = open('DDEC_net_atomic_charges.xyz', 'r')
     lines = f.readlines()
@@ -84,10 +82,10 @@ def read_output(atoms):
     for line in lines:
         if line.startswith('The following XYZ'):
             charges = []
-            for i in range(len(atoms)):
+            for i in range(len(calc.atoms)):
                 charges.append(float(lines[n+2+i].split()[4]))
         n += 1
-    return np.array(charges)[atoms.calc.resort]
+    return np.array(charges)[calc.resort]
 
 def ddec_job_in_queue():
     ''' return True or False if the directory has a job in the queue'''
@@ -121,40 +119,61 @@ def check_ddec_complete():
     'Exiting Chargemol'. We will open this file and search for this line'''
     if isfile('chargemol_output.txt') == False:
         return False
-    for line in open('chargemol_output.txt', 'r'):
-        if line.startswith('Exiting'):
-            return True
-    return False
+    if isfile('DDEC_net_atomic_charges.xyz') == False:
+        return False
+    return True
 
 def check_vasp_complete(calc):
     '''This function checks whether a prior VASP calculation has been performed correctly'''
     # First check if the initial settings of the VASP calculation were
     # appropriate for a DDEC calculation
-    if not ((calc.int_params['nsw'] == 0 or calc.int_params['nsw'] == None)
+    if not ((calc.int_params['nsw'] == 0 
+            or calc.int_params['nsw'] == None)
             and calc.bool_params['lcharg'] == True
             and calc.bool_params['laechg'] == True
             and calc.string_params['prec'] == 'Accurate'):
-        raise DDECInitialize("""Please assure VASP calculation is correctly initalized with
-nsw = 0
-lcharg = True
-laechg = True
-prec = 'Accurate'""")
+        raise DDECInitialize("""Please assure VASP calculation is correctly initalized with, nsw = 0, lcharg = True, laechg = True, prec = 'Accurate'""")
     # Now check to see if the calculation done and the right files are there
-    if not (check_calc_complete()
+    vasp_calc_done = False
+    for line in open('OUTCAR','r'):
+        if line.startswith(' General'):
+            vasp_calc_done = True
+    if not (vasp_calc_done
             and isfile('POTCAR')
             and isfile('AECCAR0')
             and isfile('AECCAR2')
             and isfile('CHG')):
-        raise DDECInitialize("""Please assure VASP calculation has completed all the files are present
-POTCAR
-AECCAR0
-AECCAR2
-CHG""")
+        raise DDECInitialize("""Please assure VASP calculation has completed all the files are present: POTCAR, AECCAR0, AECCAR2, CHG""")
     return
+
+def check_calc_complete():
+    """This function checks whether a calculation needs to be done
+
+    It just requires to be in the working directory of the
+    calculation. If it returns True, then we don't need
+    to do a calculation. It will return true if we find a completed
+    OUTCAR in the folder.
+    """
+    # First, check to see if the file 'running' is there.
+    if isfile('running') == True:
+        return True
+
+    # Second, check to see if the OUTCAR even is in there
+    if isfile('OUTCAR') == False:
+        return False
+
+    # Finally, check to see whether the job has been completed
+    for line in open('OUTCAR','r'):
+        if line.startswith(' General'):
+            return True
+
+    return False
             
 def ddec_cleanup():
     '''This function cleans the directory of the files needed to run the job'''
-    files = ('add_missing_core_density.m',
+    files = ('chargemol_output.txt',
+             'DDEC_net_atomic_charges.xyz',
+             'add_missing_core_density.m',
              'atomic_number_to_symbol.m',
              'atomic_symbol_to_number.m',
              'calculate_inverse_Xi.m',

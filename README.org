@@ -1,17 +1,21 @@
-=ase-ddec-vasp= is an extension module for ase.calculators.vasp
+=ase-ddec-jasp= is an extension module for ase.calculators.vasp. This module adds on functionality ase.calculators.Vasp to allow one to run the density derived electrostatic and chemical (DDEC) charges  program through Vasp.get_charges(). The DDEC method is one developed by David S. Sholl and Thomas A. Manz and implemented through MATLAB [fn:1][fn:2].
 
-This module adds on functionality ase.calculators.Vasp to allow one to run the DDEC program through Vasp.get_charges() function.
+The main functionality I want to allow this to do is for this module to provide a link between the DDEC MATLAB program, the atomic simulation module (ASE), and the module for running VASP through ASE effectively, developed by the John Kitchin (Jasp). Specifically, this module will be able to
 
-
-1) Be able to submit a MATLAB batch job to the queue to calculate charges.
-2) Recognize when a job needs to be submitted -- similar to the functionality of jasp.
+1) Be able to submit a MATLAB batch job to the queue to calculate charges and correctly monitor the status of this job.
+2) Recognize when a job needs to be submitted or analyzed.
 3) Read the charges from the ddec output file.
-4) When calling atoms.get_charges() again and it already contains charges, be able to see if the current charges matches the atoms.charges
 
-To use this module, do either one of two things. Alter the ase-ddec-jasp module file to make the DDEC_PATH point to the directory that holds the chargemol_10_10-2012 folder, and have PYTHONPATH and DDEC_SCRIPT point to this folder.  Or, addd these three lines to your .bashrc file.
+To use this module, do either one of two things. Alter the ase-ddec-jasp module file to make the DDEC_PATH point to the directory that holds the chargemol_10_10-2012 folde and the PYTHONPATH and DDEC_SCRIPT point to folder that houses this README file and program.  Or, you can simply add these three lines to your .bashrc file.
 
 export PYTHONPATH=/path/to/this/folder:$PYTHONPATH
-
 export DDEC_PATH=/path/to/folder/that/has/chargemol_10_10_2012
-
 export DDEC_SCRIPT=/path/to/this/folder
+
+* Footnotes
+
+[fn:1] Thomas A. Manz and David S. Sholl, "Improved Atoms-in-Molecule Charge Partitioning Functional for Simultaneously Reproducing the Electrostatic Potential and Chemical States in Periodic and Non-Periodic Materials", J. Chem. Theory Comput., Vol. 8 (2012) 2844-2867.
+
+[fn:2] Thomas A. Manz and David S. Sholl, "Chemically Meaningful Atomic Charges that Reproduce the Electrostatic Potential in Periodic and Nonperiodic Materials", J. Chem. Theory Comput., Vol. 6 (2010) 2455-2468.
+
+
