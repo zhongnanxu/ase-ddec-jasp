@@ -9,14 +9,19 @@ The main functionality I want to allow this to do is for this module to provide 
 To use this module, do either one of two things. Alter the ase-ddec-jasp module file to make the DDEC_PATH point to the directory that holds the chargemol_10_10-2012 folde and the PYTHONPATH and DDEC_SCRIPT point to folder that houses this README file and program.  Or, you can simply add these three lines to your .bashrc file.
 
 export PYTHONPATH=/path/to/this/folder:$PYTHONPATH
+
 export DDEC_PATH=/path/to/folder/that/has/chargemol_10_10_2012
+
 export DDEC_SCRIPT=/path/to/this/folder
 
 If you are on the gilgamesh.cheme.cmu.edu cluster, you can just use mine with these paths.
 
 export PYTHONPATH=/home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-jasp:$PYTHONPATH
+
 export DDEC_PATH=/home/zhongnanxu/opt/
+
 export DDEC_SCRIPT=/home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-jasp
+
 
 Here is an example of how to use this module for the rocksalt, non-magnetic FeO system.
 #+BEGIN_SRC python :results output :exports both
