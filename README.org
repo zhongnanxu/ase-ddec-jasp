@@ -52,6 +52,7 @@ with jasp('vasp-calc', atoms=FeO,
 #+END_SRC
 
 #+RESULTS:
+: [ 0.959 -0.959]
 
 * Footnotes
 
