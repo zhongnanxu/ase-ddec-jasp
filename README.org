@@ -12,6 +12,42 @@ export PYTHONPATH=/path/to/this/folder:$PYTHONPATH
 export DDEC_PATH=/path/to/folder/that/has/chargemol_10_10_2012
 export DDEC_SCRIPT=/path/to/this/folder
 
+If you are on the gilgamesh.cheme.cmu.edu cluster, you can just use mine with these paths.
+
+export PYTHONPATH=/home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-jasp:$PYTHONPATH
+export DDEC_PATH=/home/zhongnanxu/opt/
+export DDEC_SCRIPT=/home/zhongnanxu/lib/python2.6/site-packages/ase-ddec-jasp
+
+Here is an example of how to use this module for the rocksalt, non-magnetic FeO system.
+#+BEGIN_SRC python :results output :exports both
+from ase import Atom, Atoms
+import numpy as np
+from jasp import *
+from ddec import *
+
+a = 4.30
+a1 = np.array((0, a/2, a/2))
+a2 = np.array((a/2, 0, a/2))
+a3 = np.array((a/2, a/2, 0))
+FeO = Atoms([Atom('Fe', (0, 0, 0)),
+             Atom('O', a1/2 + a2/2 + a3/2)],
+            cell=(a1, a2, a3))
+
+with jasp('vasp-calc', atoms=FeO,
+          xc='PBE', lreal=False,
+          encut=450, prec='Accurate',
+          kpts=(8, 8, 8), ismear=1, sigma=0.05,
+          lcharg=True, laechg=True) as calc:
+    try:
+        calc.calculate()
+        print calc.get_charges()
+    except (VaspSubmitted, VaspQueued, DDECQueued, DDECRunning):
+        pass
+
+#+END_SRC
+
+#+RESULTS:
+
 * Footnotes
 
 [fn:1] Thomas A. Manz and David S. Sholl, "Improved Atoms-in-Molecule Charge Partitioning Functional for Simultaneously Reproducing the Electrostatic Potential and Chemical States in Periodic and Non-Periodic Materials", J. Chem. Theory Comput., Vol. 8 (2012) 2844-2867.
